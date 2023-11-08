@@ -1,196 +1,196 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height:100vh;
-}
-
-input{
-    width: 200px;
-    margin-bottom:50px ;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.table{
-    width: 615px;
-    height: 315px;
-    border: 15px solid black;
-    position:relative;
+input {
+  width: 200px;
+  margin-bottom: 50px;
 }
 
-.holes{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: green;
+.table {
+  width: 615px;
+  height: 315px;
+  border: 15px solid black;
+  position: relative;
 }
 
-.holes .hole{
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
+.holes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: green;
 }
 
-.holes .hole:nth-child(1){
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    
+.holes .hole {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.holes .hole:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
 }
 .holes .hole:nth-child(2) {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .holes .hole:nth-child(3) {
-    top: 0;
-    right: 0;
-    transform: translate(50%, -50%);
-
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
 }
 .holes .hole:nth-child(4) {
-    bottom: 0;
-    right: 0;
-    transform: translate(50%, 50%);
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
 }
 
 .holes .hole:nth-child(5) {
-    bottom: 0;
-    right: 50%;
-    transform: translate(50%, 50%);
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
 }
 .holes .hole:nth-child(6) {
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%, 50%);
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
 }
 
-.white-ball{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    top: 50%;
-    left: 20%;
-    box-shadow: 0 0 10px 0 #444343 inset;
-    transform: translateY(-50%);
-    
+.white-ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 20%;
+  box-shadow: 0 0 10px 0 #444343 inset;
+  transform: translateY(-50%);
+  transition: 0.5;
 }
 
-.ball-box{
-    width:100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
+.ball-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.ball-box .ball,.black-ball{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 100;
-    display: inline-block;
-    top: 50%;
-    left: 85%;
-    transform: translateY(100%);
+.ball-box .ball,
+.black-ball {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 100;
+  display: inline-block;
+  top: 50%;
+  left: 85%;
+  transform: translateY(100%);
+  transition: 0.5;
 }
-.red-ball{
-    background-color: red;
+.red-ball {
+  background-color: red;
 }
 .yellow-ball {
-    background-color: yellow;
+  background-color: yellow;
 }
-.red-ball:nth-child(1){
-    top:40%;
+.red-ball:nth-child(1) {
+  top: 40%;
 }
 .red-ball:nth-child(2) {
-    top: 47%;
+  top: 47%;
 }
 .red-ball:nth-child(3) {
-    top: 33%;
+  top: 33%;
 }
 
 .yellow-ball:nth-child(1) {
-    top: 26%;
+  top: 26%;
 }
 .yellow-ball:nth-child(2) {
-    top: 54%;
+  top: 54%;
 }
 .yellow-ball:nth-child(3) {
-    top: 29%;
-    left:82%;
+  top: 29%;
+  left: 82%;
 }
 
 .yellow-ball:nth-child(4) {
-    top: 36%;
-    left: 82%;
+  top: 36%;
+  left: 82%;
 }
 
- .yellow-ball:nth-child(5) {
-     top: 43%;
-    left: 82%; 
+.yellow-ball:nth-child(5) {
+  top: 43%;
+  left: 82%;
 }
- 
+
 .yellow-ball:nth-child(6) {
-    top: 50%;
-    left: 82%;
- }
+  top: 50%;
+  left: 82%;
+}
 
- .black-ball{
-    background-color: black;
-    top: 39%;
-    left: 79%;
-    color:white
-    
- }
+.black-ball {
+  background-color: black;
+  top: 39%;
+  left: 79%;
+  color: white;
+  text-align: center;
+}
 
 .red-ball:nth-child(4) {
-    top: 46%;
-    left: 79%;
+  top: 46%;
+  left: 79%;
 }
 
 .red-ball:nth-child(5) {
-    top: 32%;
-    left: 79%;
+  top: 32%;
+  left: 79%;
 }
-
 
 .red-ball:nth-child(6) {
-    top: 36%;
-    left: 76%;
+  top: 36%;
+  left: 76%;
 }
 .red-ball:nth-child(7) {
-    top: 43%;
-    left: 76%;
+  top: 43%;
+  left: 76%;
 }
 .yellow-ball:nth-child(7) {
-    top: 39%;
-    left: 73%;
+  top: 39%;
+  left: 73%;
 }
 
-.table .stick{
-    width: 300px;
-    height: 10px;
-    background-image: linear-gradient(to right,black 0 20%,brown 20% 98%,white 98% 100%);
-    position: absolute;
-    border-radius: 0 30% 30% 0;
-    transition: all 1s;
-    position: absolute;
-    transform-origin:100% 100%;
-}
-.stick {
-    left: -250px;
-    top: 130px;
+.table .stick {
+  width: 300px;
+  height: 10px;
+  background-image: linear-gradient(
+    to right,
+    black 0 20%,
+    brown 20% 98%,
+    white 98% 100%
+  );
+  position: absolute;
+  border-radius: 0 30% 30% 0;
+  transition: all 1s;
+  position: absolute;
+  transform-origin: 100% 100%;
+  transform: translate(0%, -50%);
 }
